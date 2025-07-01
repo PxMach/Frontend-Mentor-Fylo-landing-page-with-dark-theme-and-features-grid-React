@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  /* ### Primary */
+
+  --Navy_850_intro_and_email_sign_up_background: hsl(217, 28%, 15%);
+  --Navy_900_main_background: hsl(218, 28%, 13%);
+  --Navy_950_footer_background: hsl(216, 53%, 9%);
+  --Navy_800_testimonials_background: hsl(219, 30%, 18%);
+
+  /* ### Accent */
+
+  --Teal_200_inside_call-to-action_gradient: hsl(176, 68%, 64%);
+  --Cyan_500_inside_call-to-action_gradient: hsl(198, 60%, 50%);
+  --Red_500_error: hsl(0, 100%, 63%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: var(--Navy_900_main_background);
+  color: var(--White);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 4rem;
+  min-height: 100vh;
+}

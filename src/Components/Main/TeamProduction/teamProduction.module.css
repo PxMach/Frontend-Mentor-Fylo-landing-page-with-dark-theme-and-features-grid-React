@@ -1,0 +1,110 @@
+@media (min-width: 768px) {
+  .team_production {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .content .text {
+    width: 33rem;
+  }
+  .content .text h2 {
+    font-size: 30px;
+    width: 20rem;
+  }
+  .content .text p {
+    color: rgb(190, 192, 194);
+    font-size: 15px;
+    margin: 1rem 0;
+  }
+  .text a {
+    color: var(--Teal_200_inside_call-to-action_gradient);
+  }
+
+  .testimonials {
+    margin-top: 10rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .testimonials .quotes {
+    position: absolute;
+    bottom: 210px;
+    left: 20px;
+    z-index: -1;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--Navy_800_testimonials_background);
+    border-radius: 0.5rem;
+    color: rgb(190, 192, 194);
+    width: 25rem;
+  }
+  .profile {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  .profile img {
+    margin-top: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .profile_info .name {
+    color: var(--White);
+    font-weight: 600;
+  }
+
+  .get_started {
+    margin-top: 10rem;
+    background-color: var(--Navy_850_intro_and_email_sign_up_background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.4rem;
+    padding: 2.4rem;
+    width: 55rem;
+  }
+  .get_started .text {
+    color: rgb(190, 192, 194);
+    font-size: 14px;
+    width: 40rem;
+  }
+  form {
+    display: flex;
+    gap: 1rem;
+  }
+  form input {
+    padding: 1rem;
+    border: none;
+    border-radius: 50rem;
+    width: 35rem;
+  }
+  form input::placeholder {
+    padding: 1.5rem;
+  }
+  form button {
+    border: none;
+    border-radius: 50rem;
+    background: linear-gradient(
+      to right,
+      var(--Teal_200_inside_call-to-action_gradient),
+      var(--Cyan_500_inside_call-to-action_gradient)
+    );
+    color: white;
+    width: 10rem;
+    font-weight: 600;
+  }
+}
