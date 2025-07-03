@@ -1,5 +1,134 @@
+.team_production {
+  margin: 10rem 0 25rem 0;
+  padding: 1rem;
+  position: relative;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.content img {
+  width: 300px;
+}
+.content .text {
+  color: rgb(190, 192, 194);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--Teal_200_inside_call-to-action_gradient);
+  padding-bottom: 0.2rem;
+  width: 11rem;
+}
+.link a {
+  color: var(--Teal_200_inside_call-to-action_gradient);
+  text-decoration: none;
+}
+.link img {
+  width: 1rem;
+  cursor: pointer;
+  padding-top: 0.5rem;
+}
+
+.testimonials {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.testimonials .quotes {
+  position: absolute;
+  top: -2rem;
+  left: 0rem;
+  z-index: -1;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--Navy_800_testimonials_background);
+  border-radius: 0.5rem;
+  color: rgb(190, 192, 194);
+  width: 21rem;
+  font-size: 12px;
+}
+.profile {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.profile_info .name {
+  color: var(--White);
+  font-weight: 600;
+}
+
+.get_started {
+  margin-top: 10rem;
+  background-color: var(--Navy_850_intro_and_email_sign_up_background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.4rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 21.5rem;
+  position: absolute;
+  bottom: -35rem;
+}
+.get_started .text {
+  color: rgb(190, 192, 194);
+  font-size: 14px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input {
+  padding: 1rem;
+  border: none;
+  border-radius: 50rem;
+  width: 20rem;
+}
+form input::placeholder {
+  padding: 1.5rem;
+}
+form button {
+  border: none;
+  border-radius: 50rem;
+  background: linear-gradient(
+    to right,
+    var(--Teal_200_inside_call-to-action_gradient),
+    var(--Cyan_500_inside_call-to-action_gradient)
+  );
+  color: white;
+  width: 20rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .team_production {
+    padding: 4rem;
     margin: 10rem 0 20rem 0;
     display: flex;
     flex-direction: column;
@@ -10,10 +139,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     gap: 5rem;
+  }
+  .content .illustration {
+    width: 615px;
   }
   .content .text {
     width: 33rem;
+    gap: 1rem;
   }
   .content .text h2 {
     font-size: 30px;
@@ -22,64 +156,27 @@
   .content .text p {
     color: rgb(190, 192, 194);
     font-size: 15px;
-    margin: 1rem 0;
   }
   .text a {
     color: var(--Teal_200_inside_call-to-action_gradient);
   }
 
   .testimonials {
-    margin-top: 10rem;
-    display: flex;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    flex-direction: row;
   }
   .testimonials .quotes {
     position: absolute;
     bottom: 210px;
-    left: 20px;
     z-index: -1;
   }
   .testimonial {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    background-color: var(--Navy_800_testimonials_background);
-    border-radius: 0.5rem;
-    color: rgb(190, 192, 194);
     width: 25rem;
-  }
-  .profile {
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-  }
-  .profile img {
-    margin-top: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-  }
-  .profile_info .name {
-    color: var(--White);
-    font-weight: 600;
   }
 
   .get_started {
-    margin-top: 10rem;
-    background-color: var(--Navy_850_intro_and_email_sign_up_background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.4rem;
-    border-radius: 0.5rem;
-    padding: 2.4rem;
     width: 55rem;
     position: absolute;
-    bottom: -25rem;
+    bottom: -26rem;
   }
   .get_started .text {
     color: rgb(190, 192, 194);
@@ -88,13 +185,15 @@
   }
   form {
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 2rem;
   }
   form input {
     padding: 1rem;
     border: none;
     border-radius: 50rem;
-    width: 35rem;
+    height: 3rem;
+    width: 30rem;
   }
   form input::placeholder {
     padding: 1.5rem;
@@ -108,7 +207,7 @@
       var(--Cyan_500_inside_call-to-action_gradient)
     );
     color: white;
-    width: 10rem;
+    width: 12rem;
     font-weight: 600;
   }
 }

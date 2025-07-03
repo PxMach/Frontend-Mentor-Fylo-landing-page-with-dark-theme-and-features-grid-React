@@ -1,4 +1,5 @@
 import illustration from "../../../assets/images/illustration-stay-productive.png";
+import arrow from "../../../assets/images/icon-arrow.svg";
 import quotes from "../../../assets/images/bg-quotes.png";
 import styles from "./teamProduction.module.css";
 import profile1 from "../../../assets/images/profile-1.jpg";
@@ -10,7 +11,11 @@ export default function TeamProduction() {
     <>
       <section className={styles.team_production}>
         <div className={styles.content}>
-          <img src={illustration} alt="illustration stay productive" />
+          <img
+            className={styles.illustration}
+            src={illustration}
+            alt="illustration stay productive"
+          />
           <div className={styles.text}>
             <h2> Stay productive, wherever you are</h2>
             <p>
@@ -21,7 +26,12 @@ export default function TeamProduction() {
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
             </p>
-            <a href="#"> See how Fylo works</a>
+            <div className={styles.link}>
+              <a href="#"> See how Fylo works</a>
+              <a href="#">
+                <img src={arrow} alt="Arrow icon" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -74,7 +84,7 @@ export default function TeamProduction() {
         </div>
 
         <div className={styles.get_started}>
-          <h2> Get early access today</h2>
+          <h3> Get early access today</h3>
           <p className={styles.text}>
             It only takes a minute to sign up and our free starter tier is
             extremely generous. If you have any questions, our support team
