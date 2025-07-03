@@ -17,7 +17,7 @@ export default function Secure() {
             Access them wherever you need, share and collaborate with friends
             family, and co-workers.
           </p>
-          <button type="button">Get Started</button>
+          <button className={styles.secure__button} type="button">Get Started</button>
         </div>
         
         <div className={styles.container__secure}>

@@ -40,13 +40,9 @@
   font-weight: 600;
   cursor: pointer;
 }
-/* .secure__content button:hover {
-  background: linear-gradient(
-    to right,
-    var(--Teal_200_inside_call-to-action_gradient_hover),
-    var(--White)
-  );
-} */
+.secure__content button:hover {
+  background: rgb(135, 224, 224);
+}
 
 .container__secure {
   margin-top: 2rem;

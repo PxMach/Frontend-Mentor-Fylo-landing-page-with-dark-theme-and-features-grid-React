@@ -1,3 +1,4 @@
+import React from "react";
 import illustration from "../../../assets/images/illustration-stay-productive.png";
 import arrow from "../../../assets/images/icon-arrow.svg";
 import quotes from "../../../assets/images/bg-quotes.png";
@@ -7,6 +8,12 @@ import profile2 from "../../../assets/images/profile-2.jpg";
 import profile3 from "../../../assets/images/profile-3.jpg";
 
 export default function TeamProduction() {
+  const [showError, setShowError] = React.useState(false);
+
+  function handleSubmit() {
+    setShowError(false);
+  }
+
   return (
     <>
       <section className={styles.team_production}>
@@ -91,8 +98,13 @@ export default function TeamProduction() {
             would be happy to help you.
           </p>
           <form action="post">
-            <input type="email" placeholder="email@example.com" />
-            <button type="submit"> Get Started For Free</button>
+            <div className={styles.input_container}>
+              <input type="email" placeholder="email@example.com" />
+              {showError && <span>Please enter a valid email address</span>}
+            </div>
+            <button type="submit" onClick={handleSubmit}>
+              Get Started For Free
+            </button>
           </form>
         </div>
       </section>
