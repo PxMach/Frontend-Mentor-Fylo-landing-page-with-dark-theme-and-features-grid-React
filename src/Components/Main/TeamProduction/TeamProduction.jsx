@@ -11,7 +11,7 @@ export default function TeamProduction() {
   const [showError, setShowError] = React.useState(false);
 
   function handleSubmit() {
-    setShowError(false);
+    setShowError(true);
   }
 
   return (
