@@ -36,7 +36,7 @@ export default function TeamProduction() {
             <div className={styles.link}>
               <a href="#"> See how Fylo works</a>
               <a href="#">
-                <img src={arrow} alt="Arrow icon" />
+                <img src={arrow} alt="Arrow icon" aria-label="Arrow icon" />
               </a>
             </div>
           </div>
