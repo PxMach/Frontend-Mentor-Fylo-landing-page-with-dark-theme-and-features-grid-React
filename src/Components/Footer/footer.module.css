@@ -64,7 +64,7 @@ footer {
 @media (min-width: 768px) {
   footer {
     background-color: var(--Navy_950_footer_background);
-    padding: 8rem 4rem 3rem;
+    padding: 10rem 4rem 3rem;
   }
 
   .footerContent {
